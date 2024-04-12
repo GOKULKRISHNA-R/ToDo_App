@@ -16,48 +16,9 @@ class MyApp extends StatelessWidget {
           title: const Text("ToDo App"),
         ),
         body: const Center(
-          child: CenterButton()
+          child: Text("Start")
           ),
       ),
-    );
-  }
-}
-
-class CenterButton extends StatelessWidget {
-  const CenterButton({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-        ElevatedButton(
-          onPressed: () => showDialog<String>(
-            context: context,
-            builder: (BuildContext context) => Dialog(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    const SizedBox(height: 15),
-                    const Text('Panniyae Aagurom '),
-                    const SizedBox(height: 15),
-                    TextButton(
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                      child: const Text('Close'),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          child: const Text('poda venna 💪'),
-        ),
-      ],
     );
   }
 }
