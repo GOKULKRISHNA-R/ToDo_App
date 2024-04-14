@@ -55,7 +55,7 @@ class CenterButton extends StatelessWidget {
               ),
             ),
           ),
-          child: const Text('poda venna 💪'),
+          child: const Text('Panrom 💪'),
         ),
       ],
     );
